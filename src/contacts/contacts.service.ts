@@ -20,7 +20,7 @@ export class ContactsService {
   }
 
   findByFirstName(first_name: string) {
-    return this.contactModel.findOne({first_name: first_name});
+    return this.contactModel.findOne({firstName: first_name});
   }
 
   update(first_name: string, updateContactDto: UpdateContactDto) {
